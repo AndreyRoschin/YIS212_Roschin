@@ -13,7 +13,7 @@ protected:
 	/**
 	 \brief	функция принимает количество пассажиров
 	 */
-	void set_number_of_passengers(const int& number_of_passengers) override;
+	void set_number_of_passengers(const int number_of_passengers) override;
 public:
 	/**
 	 \brief	Конструктор по умолчанию
@@ -22,27 +22,27 @@ public:
 	/**
 	 \brief	Конструктор с параметрами
 	*/
-	explicit Car(const double& average_speed, const string& model, const int& number_of_passengers, const double& distance, const double& fuel);
+	explicit Car(const double average_speed, const string& model, const int number_of_passengers, const double distance, const double fuel);
 	/**
 	 \brief	Деструктор по умолчанию
 	*/
-	~Car() override = default;
+	virtual ~Car() override = default;
 	/**
 	 \brief	Возвращает количество топлива в литрах
 	 \returns	fuel
 	 */
-	double get_fuel();
+	double get_fuel()const;
 	/**
 	 \brief	Устанавливает новое количество топлива
 	 */
-	void set_new_fuel(const double& fuel);
+	void set_new_fuel(const double fuel);
 	/**
 	 \brief	Возвращает расход топлива на заданной дистанции при q - расход топлива на 100 км
 	 \returns	q * distance / 100
 	 */
-	double get_fuel_consumption(const double& q);
+	double get_fuel_consumption(const double q);
 	/**
 	 \brief	функция принимает новое расстояние
 	 */
-	void set_new_distance(const double& distance) override;
+	void set_new_distance(const double distance) override;
 };
