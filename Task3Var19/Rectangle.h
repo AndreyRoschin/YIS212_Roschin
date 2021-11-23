@@ -6,6 +6,8 @@ class Rectangle:public Pair
 public:
 	/**
 	 \brief	Конструктор с параметрами
+	 \params length
+	 \params width
 	 */
 	Rectangle(const double length, const double width);
 	/**
