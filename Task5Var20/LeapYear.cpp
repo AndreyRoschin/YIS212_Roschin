@@ -18,43 +18,32 @@ bool is_leap_year3(int year)
 {
 	if (year > 0)
 	{
+		throw invalid_argument{ "Error! Year less than zero, standard exception" };
 		is_leap_year(year);
 	}
-	else
-	{
-		throw invalid_argument{ "Error! Year less than zero, standard exception" };
-	}
+	is_leap_year(year);
 }
 bool is_leap_year4(int year)
 {
 	if (year > 0)
 	{
-		is_leap_year(year);
-	}
-	else
-	{
 		throw Empty_class();
 	}
+	is_leap_year(year);
 }
 bool is_leap_year5(int year)
 {
 	if (year > 0)
 	{
-		is_leap_year(year);
-	}
-	else
-	{
 		throw independent_class("Error! Year is equal to / less than 0, independent class with function parameter fields");
 	}
+	is_leap_year(year);
 }
 bool is_leap_year6(int year)
 {
 	if (year > 0)
 	{
-		is_leap_year(year);
-	}
-	else
-	{
 		throw successor_class("Error! Year is equal to / less than 0, successor class");
 	}
+	is_leap_year(year);
 }
