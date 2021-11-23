@@ -9,6 +9,12 @@ class Cursor
 public:
 	/**
 	 \brief	Конструктор с параметрами
+	 \params coordinates_x
+	 \params coordinates_y
+	 \params coordinates_y
+	 \params cursor_size
+	 \params cursor_type
+	 \params cursor_visibility
 	 */
 	explicit Cursor(const unsigned int& coordinates_x, const unsigned int& coordinates_y, const unsigned int& cursor_size, const string& cursor_type, const bool& cursor_visibility = true);
 	/**
