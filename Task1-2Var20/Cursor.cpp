@@ -31,7 +31,7 @@ void Cursor::set_correct_cursor_type(const string& cursor_type)
 	this->cursor_type = cursor_type;
 }
 
-Cursor::Cursor(const unsigned int coordinates_x, const unsigned int coordinates_y, const unsigned int cursor_size, const string& cursor_type, const bool cursor_visibility)
+Cursor::Cursor(const int coordinates_x, const int coordinates_y, const int cursor_size, const string& cursor_type, const bool cursor_visibility)
 {
 	set_correct_coordinates(coordinates_x, coordinates_y);
 	set_correct_cursor_size(cursor_size);
