@@ -7,24 +7,28 @@ public:
 	/**
 	 \brief	Конструктор с параметрами
 	 */
-	Rectangle(const double& length, const double& width);
+	Rectangle(const double length, const double width);
+	/**
+	 \brief	Деструктор
+	 */
+	~Rectangle();
 	/**
 	 \brief	Получение площади
 	 */
-	double get_area();
+	double get_area()const;
 	/**
 	 \brief Получение периметра
 	 */
-	double get_perimeter();
+	double get_perimeter()const;
 private:
 	/**
 	 \brief Задание верной длины
 	 */
-	void set_correct_length(const double& length);
+	void set_correct_length(const double length);
 	/**
 	 \brief Задание верной ширины
 	 */
-	void set_correct_width(const double& width);
+	void set_correct_width(const double width);
 	double length;
 	double width;
 };
